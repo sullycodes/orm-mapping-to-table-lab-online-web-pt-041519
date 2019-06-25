@@ -30,13 +30,16 @@ class Student
       DB[:conn].execute(sql)
   end
 
-
-
-
+  # sql = <<-SQL
+#       INSERT INTO songs (name, album) 
+#       VALUES (?, ?)
+#     SQL
+ 
+#     DB[:conn].execute(sql, self.name, self.album)
 
   def save 
     sql = <<-SQL
-          INSERT INTO students (name,grade)
+          INSERT INTO students (name, grade)
           VALUES (?, ?)
           SQL
     DB[:conn].execute(sql, self.name, self.grade)
