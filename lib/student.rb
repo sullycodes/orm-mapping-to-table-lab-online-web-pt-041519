@@ -13,7 +13,9 @@ class Student
   end
   
   def self.create_table 
-    sql = <<= SQL CREATE TABLE students (name, grade) VALUES (?,?) student.name, student.grade);
+    sql = <<= SQL CREATE TABLE students (
+        
+      )
     DB[:conn].execute(sql)
   end
 
