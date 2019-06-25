@@ -22,4 +22,4 @@ class Student
     DB[:conn].execute(sql)
   end
 
-end
+end #Student
